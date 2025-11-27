@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locales Comerciales - Paseo Norte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Paseo Norte</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="entretenimientos.html">Entretenimientos</a>
+      <a href="tiendas.html">Tiendas</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="gastronomia.html">Gastronomía</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú de navegación">☰</button>
+  </header>
+
+  <!-- TIENDAS / LOCALES COMERCIALES -->
+  <section class="tiendas" id="tiendas">
+    <h2>Locales Comerciales</h2>
+
+    <div class="mapa-container">
+      <div class="mapa-interactivo" id="mapaInteractivo">
+        <div class="mapa-plano">
+          <div class="planta-label">Planta Baja</div>
+
+          <!-- Marcadores del mapa -->
+          <div class="local-mapa" data-local="tecno" style="top: 20%; left: 10%;">Tecno Galeria</div>
+          <div class="local-mapa" data-local="electro" style="top: 20%; left: 30%;">Electro Shop</div>
+          <div class="local-mapa" data-local="shoes" style="top: 20%; left: 50%;">Urban Shoes</div>
+          <div class="local-mapa" data-local="book" style="top: 20%; left: 70%;">Book Center</div>
+          <div class="local-mapa" data-local="jewelry" style="top: 60%; left: 40%;">Jewelry Plus</div>
+        </div>
+      </div>
+
+      <!-- GRID DE 5 TIENDAS -->
+      <div class="tiendas-grid">
+        <!--Tecno Galeria (TP Mili)-->
+        <div class="tienda-card" data-local="tecno">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=60"
+            alt="Servicio Tecnico y Accesorios">
+          <h3>Tecno Galeria</h3>
+          <p>Servicios y Accesorios</p>
+          <a href=" https://milicarvajal234.github.io/tpo-local-comercial-final/" target="_blank" class="tienda-link">
+            Ver sitio individual →
+          </a>
+        </div>
+
+        <!-- 2) Electro -->
+        <div class="tienda-card" data-local="electro">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=60"
+            alt="Local de electrónica y tecnología">
+          <h3>Electro Shop</h3>
+          <p>Electrónica y tecnología</p>
+          <a href="#" class="tienda-link">Ver sitio individual →</a>
+        </div>
+
+        <!-- 3) Calzado -->
+        <div class="tienda-card" data-local="shoes">
+          <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=800&q=60"
+            alt="Calzado urbano">
+          <h3>Urban Shoes</h3>
+          <p>Calzado urbano</p>
+          <a href="#" class="tienda-link">Ver sitio individual →</a>
+        </div>
+
+        <!-- 4) Librería -->
+        <div class="tienda-card" data-local="book">
+          <img src="https://images.unsplash.com/photo-1596457223690-5b04f9ef2a5f?auto=format&fit=crop&w=800&q=60"
+            alt="Libros y papelería">
+          <h3>Book Center</h3>
+          <p>Libros y papelería</p>
+          <a href="#" class="tienda-link">Ver sitio individual →</a>
+        </div>
+
+        <!-- 5) Joyería -->
+        <div class="tienda-card" data-local="jewelry">
+          <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=800&q=60"
+            alt="Joyería y relojes">
+          <h3>Jewelry Plus</h3>
+          <p>Joyas, relojes y accesorios premium.</p>
+          <a href="#" class="tienda-link">Ver sitio individual →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Paseo Norte — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

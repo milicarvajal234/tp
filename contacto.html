@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Paseo Norte</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">Paseo Norte</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="entretenimientos.html">Entretenimientos</a>
+      <a href="tiendas.html">Tiendas</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="gastronomia.html">Gastronomía</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú de navegación">☰</button>
+  </header>
+
+  <!-- CONTACTO / CHAT BOT -->
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto-container">
+      <div class="contacto-info">
+        <h3>Información de contacto</h3>
+        <p><strong>Email:</strong> contacto@paseonorte.com</p>
+        <p><strong>Teléfono:</strong> +54 11 5555 5555</p>
+        <p><strong>Dirección:</strong> Av. Principal 1234, CABA, Buenos Aires</p>
+        <p><strong>Horarios:</strong> Lunes a domingos de 10:00 a 22:00 hs.</p>
+        <p>Si sos marca o emprendedor y querés tener tu local en Paseo Norte, también podés escribirnos por este formulario.</p>
+      </div>
+      <div class="formulario-contacto">
+        <h3>Envíanos un Mensaje</h3>
+        <form id="contactForm">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ej: juan@mail.com" required>
+
+          <label for="telefono">Teléfono (opcional)</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 11 5555 5555">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Contanos en qué podemos ayudarte..." rows="5" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+    <!-- Chat Bot -->
+    <div class="chatbot-container">
+      <div class="chatbot-toggle" id="chatbotToggle" aria-label="Abrir asistente virtual">
+        <span>💬</span>
+        <span class="chatbot-badge">1</span>
+      </div>
+      <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+          <h4>Asistente Virtual</h4>
+          <button class="chatbot-close" id="chatbotClose">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+          <div class="chatbot-message bot">
+            <p>¡Hola! Soy el asistente virtual de Paseo Norte. ¿En qué puedo ayudarte?</p>
+          </div>
+        </div>
+        <div class="chatbot-input-container">
+          <input type="text" id="chatbotInput" placeholder="Escribe tu mensaje...">
+          <button id="chatbotSend">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Paseo Norte — Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
